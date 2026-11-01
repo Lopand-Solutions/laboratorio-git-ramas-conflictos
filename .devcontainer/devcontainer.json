@@ -1,0 +1,7 @@
+{
+  // Abre el laboratorio listo para usar en GitHub Codespaces o en VS Code con Dev Containers.
+  // Imagen base de Ubuntu 24.04 LTS de devcontainers (trae git); fija para que el laboratorio no cambie solo.
+  "name": "Laboratorio de git: ramas, merge, rebase y conflictos",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
+  "postCreateCommand": "./tool/preparar.sh"
+}

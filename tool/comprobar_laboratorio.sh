@@ -37,5 +37,5 @@ elif [ "$contenido" = "$esperado_rama" ]; then bien "config.txt en nueva-funcion
 else mal "config.txt en nueva-funcion no quedó bien: ¿elegiste el lado de HEAD creyendo que era el tuyo?"; fi
 
 echo
-if [ "$fallas" -eq 0 ]; then echo "Laboratorio completo."; exit 0; fi
+if [ "$fallas" -eq 0 ]; then echo "Laboratorio completo."; "$(dirname "$0")/reportar.sh" git-ramas-conflictos principal; exit 0; fi
 echo "Faltan $fallas punto(s)."; exit 1
